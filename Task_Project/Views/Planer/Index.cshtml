@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section Styles { 
+    <link href="~/css/Planer.css" rel="stylesheet" />
+}
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div id="planner">
+            <div id="planer-top">
+                <form action="AddTask" method="post">
+                    <div id="top-input">
+                        <input id="name-input" type="text" name="name" placeholder="Введіть завдання"/>
+                        <button type="submit" class="btn btn-success"><i class="fa fa-plus"></i> Додати</button>
+                    </div>
+                </form>
+            </div>
+            <div id="planer-body">
+                <div class="task">
+                    <div class="task-icon">
+                        <i class="fa fa-check-circle fa-2x"></i>
+                        <i class="fa fa-circle fa-2x"></i>
+                    </div>
+                    <div class="task-name">Текст завдання</div>
+                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
